@@ -6,8 +6,9 @@
 class User
 {
 
-
-	std::string typeOfUser;
+	int prioryty;
+	std::string accountType;
+	int userBalance;
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-User::User()
+User::User() : userBalance(100)
 {
 }
 
