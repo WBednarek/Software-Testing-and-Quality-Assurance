@@ -1,19 +1,40 @@
 #pragma once
+
 #include <string>
 
 
+class User {
 
-class User
-{
-
-	int prioryty;
-	std::string accountType;
-	int userBalance;
-
+    int userBalance;
+    unsigned int numberOfJobsInQueue;
+    int prioryty;
+    std::string accountTypeName;
+    unsigned int currnetDemand;
 
 
 public:
-	User();
-	~User();
+    User();
+
+    User(int accountTypeNumber);
+
+    ~User();
+
+    void setAccountType(int accountTypeNum);
+
+    const std::string &getAccountTypeName() const;
+
+    int getPrioryty() const;
+
+    int getUserBalance() const;
+
+    unsigned int getNumberOfJobsInQueue() const;
+
+    void setUserBalance(int userBalance);
+
+    void setNumberOfJobsInQueue(unsigned int numberOfJobsInQueue);
+
+    unsigned int getCurrnetDemand() const;
+
+    void setCurrnetDemand(unsigned int currnetDemand);
 };
 

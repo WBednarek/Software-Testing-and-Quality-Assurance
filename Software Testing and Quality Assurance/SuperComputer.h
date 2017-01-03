@@ -1,8 +1,8 @@
 #pragma once
-
 #include <iostream>
 #include <vector>
 #include "Node.h"
+#include "User.h"
 
 class SuperComputer
 {
@@ -16,9 +16,13 @@ public:
 	SuperComputer();
 	~SuperComputer();
 
-    void initailizeListOfNodes();
+    void initailiseListOfNodes();
 
     Node getNode(unsigned int numberOfNode);
+
+    void listOfActualJobs();
+
+    void calculateUserDemand(User u);
 
 };
 

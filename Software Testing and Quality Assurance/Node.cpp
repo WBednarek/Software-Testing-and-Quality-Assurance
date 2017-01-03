@@ -25,7 +25,7 @@ unsigned int Node::setNumberOfCores(unsigned int numberOfDemandedCores)
 {
 	if (areThereEnoughFreeCores(numberOfDemandedCores))
 	{
-		return totalNumberOfCores - numberOfDemandedCores;
+        return (*this).totalNumberOfCores - numberOfDemandedCores;
 	}
 
 }

@@ -1,10 +1,9 @@
-
 #include "SuperComputer.h"
 
 
 SuperComputer::SuperComputer()
 {
-    initailizeListOfNodes();
+    initailiseListOfNodes();
 }
 
 
@@ -12,7 +11,7 @@ SuperComputer::~SuperComputer()
 {
 }
 
-void SuperComputer::initailizeListOfNodes() {
+void SuperComputer::initailiseListOfNodes() {
     for (int i = 0; i < numberOfNodes; ++i) {
         computerNodes.push_back(Node((unsigned int) i));
     }
@@ -34,5 +33,13 @@ Node SuperComputer::getNode(unsigned int numberOfNode) {
         std::cout << "Standard exception: " << e.what() << std::endl;
     }
 
+
+}
+
+void SuperComputer::listOfActualJobs() {
+
+}
+
+void SuperComputer::calculateUserDemand(User u) {
 
 }
