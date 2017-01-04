@@ -12,10 +12,10 @@ int main() {
 
     Node node1;
     cout << "Welcome to supercomputer symulation system\n";
-    cout << "Number of cores in node: " << node1.getNumberOfCores() << std::endl;
+    cout << "Number of cores in node: " << node1.getAvailableNumberOfCoresInNode() << std::endl;
 
 
-    Simulation sim(20);
+    Simulation sim(50);
     sim.startSimulation();
     //system("pause");
     return 0;

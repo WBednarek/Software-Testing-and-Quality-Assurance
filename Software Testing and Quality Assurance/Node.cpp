@@ -2,8 +2,7 @@
 
 
 //Default constructor
-Node::Node() : totalNumberOfCores(16)
-{
+Node::Node() : totalNumberOfCores(16) {
 
 }
 
@@ -12,37 +11,28 @@ Node::Node(unsigned int ID) : totalNumberOfCores(16) {
 
 }
 
-Node::~Node()
-{
+Node::~Node() {
 }
 
-int Node::getNumberOfCores()
-{
-	return totalNumberOfCores;
+int Node::getAvailableNumberOfCoresInNode() {
+    return totalNumberOfCores;
 }
 
-unsigned int Node::setNumberOfCores(unsigned int numberOfDemandedCores)
-{
-	if (areThereEnoughFreeCores(numberOfDemandedCores))
-	{
+unsigned int Node::setAvailableNumberOfCoresInNode(unsigned int numberOfDemandedCores) {
+    if (areThereEnoughFreeCores(numberOfDemandedCores)) {
         return (*this).totalNumberOfCores - numberOfDemandedCores;
-	}
+    }
 
 }
 
-bool Node::areThereEnoughFreeCores(unsigned int numberOfCoresToCheck)
+bool Node::areThereEnoughFreeCores(unsigned int numberOfCoresToCheck) {
+    if (totalNumberOfCores >= numberOfCoresToCheck) {
+        (*this).freeCores = true;
+    } else {
+        (*this).freeCores = false;
+    }
 
-{
-	if (totalNumberOfCores >= numberOfCoresToCheck)
-	{
-		(*this).freeCores = true;
-	}
-	else
-	{
-		(*this).freeCores = false;
-	}
-
-	return (*this).freeCores;
+    return (*this).freeCores;
 }
 
 int Node::getNodeID() {

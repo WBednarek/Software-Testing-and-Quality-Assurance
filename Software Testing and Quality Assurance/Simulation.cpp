@@ -38,6 +38,7 @@ void Simulation::makeUsers() {
 
 
     for (int i = 0; i < numberOfUsers; ++i) {
+        //Generating random numbers
         unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
         std::default_random_engine dre(seed);
         std::uniform_int_distribution<int> gen(0, 2);
@@ -51,7 +52,7 @@ void Simulation::makeUsers() {
         std::default_random_engine dre(seed);
         std::uniform_int_distribution<int> gen(0, 3);
         int randNumber = gen(dre);
-        Sleep(10);
+        Sleep(20);
         (*this).superComputerUsers.at(i).setCurrnetDemand(randNumber);
     }
 

@@ -12,6 +12,7 @@ class User {
     std::string accountTypeName;
     unsigned int currnetDemand;
     double timeOfCurrentJob;
+    unsigned int demandedNumberOfCores;
 
 
 public:

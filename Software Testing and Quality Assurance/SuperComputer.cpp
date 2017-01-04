@@ -2,14 +2,15 @@
 #include "JobTimeEstimator.h"
 
 
-SuperComputer::SuperComputer() : jobCostPerMinute(0.1) {
+SuperComputer::SuperComputer() : jobCostPerMinute(0.01) {
 
     initialiseListOfNodes();
 }
 
 
-SuperComputer::SuperComputer(std::vector<User> listOfUsers) : jobCostPerMinute(0.001) {
+SuperComputer::SuperComputer(std::vector<User> listOfUsers) : jobCostPerMinute(0.01) {
 
+    initialiseListOfNodes();
     (*this).superComputerUsersList = listOfUsers;
 }
 
@@ -59,6 +60,7 @@ void SuperComputer::calculateUserDemandCost() {
 
 }
 
+
 void SuperComputer::estimateWorkperiod(User &user) {
     //Short job
     if (user.getCurrnetDemand() == 0) {
@@ -82,6 +84,11 @@ void SuperComputer::listOfActualJobs() {
                   << "\t\t\t" << user.getAccountTypeName() << "\n" << std::endl;
     }
     std::cout << "\nTotal earnings: " << (*this).getSuperComputerIncome() << std::endl;
+}
+
+void SuperComputer::calculateAmountOfResourcesToUse(User &user) {
+
+
 }
 
 

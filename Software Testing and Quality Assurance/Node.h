@@ -1,23 +1,27 @@
 #pragma once
-class Node
-{
+
+class Node {
 
 
-	unsigned int totalNumberOfCores;
-	unsigned int nodeID;
-	bool freeCores;
+    unsigned int totalNumberOfCores;
+    unsigned int nodeID;
+    bool freeCores;
 
 
 public:
-	Node();
+    Node();
 
-	Node(unsigned int ID);
-	~Node();
-	int getNumberOfCores();
-	unsigned int setNumberOfCores(unsigned int numberOfDemandedCores);
-	bool areThereEnoughFreeCores(unsigned int numberOfCoresToCheck);
+    Node(unsigned int ID);
 
-	int getNodeID();
+    ~Node();
+
+    int getAvailableNumberOfCoresInNode();
+
+    unsigned int setAvailableNumberOfCoresInNode(unsigned int numberOfDemandedCores);
+
+    bool areThereEnoughFreeCores(unsigned int numberOfCoresToCheck);
+
+    int getNodeID();
 
 };
 

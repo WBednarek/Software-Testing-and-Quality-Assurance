@@ -31,5 +31,7 @@ public:
     void estimateWorkperiod(User &user);
 
 	double getSuperComputerIncome() const;
+
+	void calculateAmountOfResourcesToUse(User &user);
 };
 
