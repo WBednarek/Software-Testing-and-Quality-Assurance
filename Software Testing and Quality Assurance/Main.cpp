@@ -17,6 +17,7 @@ int main() {
 
     Simulation sim(50);
     sim.startSimulation();
+
     //system("pause");
     return 0;
 }
