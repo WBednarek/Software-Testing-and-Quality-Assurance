@@ -10,6 +10,7 @@ class User {
     int prioryty;
     std::string accountTypeName;
     unsigned int currnetDemand;
+    double timeOfCurrentJob;
 
 
 public:
@@ -35,6 +36,10 @@ public:
 
     unsigned int getCurrnetDemand() const;
 
-    void setCurrnetDemand(unsigned int currnetDemand);
+    void setCurrnetDemand(unsigned int currnetDemandNumber);
+
+    double getTimeOfCurrentJob() const;
+
+    void setTimeOfCurrentJob(double timeOfCurrentJob);
 };
 

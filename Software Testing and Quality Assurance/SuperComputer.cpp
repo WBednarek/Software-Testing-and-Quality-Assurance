@@ -1,9 +1,10 @@
 #include "SuperComputer.h"
+#include "JobTimeEstimator.h"
 
 
 SuperComputer::SuperComputer()
 {
-    initailiseListOfNodes();
+    initialiseListOfNodes();
 }
 
 
@@ -11,7 +12,7 @@ SuperComputer::~SuperComputer()
 {
 }
 
-void SuperComputer::initailiseListOfNodes() {
+void SuperComputer::initialiseListOfNodes() {
     for (int i = 0; i < numberOfNodes; ++i) {
         computerNodes.push_back(Node((unsigned int) i));
     }
@@ -41,5 +42,20 @@ void SuperComputer::listOfActualJobs() {
 }
 
 void SuperComputer::calculateUserDemand(User u) {
+    // estimateWorkperiod();
+}
+
+void SuperComputer::estimateWorkperiod(User user) {
+    //Short job
+    if (user.getCurrnetDemand() == 0) {
+        user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(0));
+
+    } else if (user.getCurrnetDemand() == 1) {
+        user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(1));
+    } else if (user.getCurrnetDemand() == 2) {
+        user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(2));
+    } else if (user.getCurrnetDemand() == 3) {
+        user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(3));
+    }
 
 }

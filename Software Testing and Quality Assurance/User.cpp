@@ -16,10 +16,10 @@ User::~User()
 
 void User::setAccountType(int accountTypeNum) {
     switch (accountTypeNum) {
+
         case 0 : {
             (*this).accountTypeName = "STUDENT";
             break;
-
         }
         case 1 : {
             (*this).accountTypeName = "RESEARCHER";
@@ -66,6 +66,14 @@ unsigned int User::getCurrnetDemand() const {
     return currnetDemand;
 }
 
-void User::setCurrnetDemand(unsigned int currnetDemand) {
-    User::currnetDemand = currnetDemand;
+void User::setCurrnetDemand(unsigned int currnetDemandNumber) {
+    User::currnetDemand = currnetDemandNumber;
+}
+
+double User::getTimeOfCurrentJob() const {
+    return timeOfCurrentJob;
+}
+
+void User::setTimeOfCurrentJob(double timeOfCurrentJob) {
+    User::timeOfCurrentJob = timeOfCurrentJob;
 }

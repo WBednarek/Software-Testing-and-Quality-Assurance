@@ -16,7 +16,7 @@ public:
 	SuperComputer();
 	~SuperComputer();
 
-    void initailiseListOfNodes();
+    void initialiseListOfNodes();
 
     Node getNode(unsigned int numberOfNode);
 
@@ -24,5 +24,6 @@ public:
 
     void calculateUserDemand(User u);
 
+    void estimateWorkperiod(User user);
 };
 
