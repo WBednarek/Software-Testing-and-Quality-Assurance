@@ -24,6 +24,8 @@
 \usepackage[english]{babel}
 \usepackage{booktabs}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -201,14 +203,16 @@ including title, author, version number, date, and source or location.$>$
 \section{Product Perspective}
 Product was designed as completely new supercomputer solution, not upgrade or replacement. This system has been developed for complex computation like: aerodynamic computation, physics, complex math equation and advanced computer graphics.
 
-$<$Describe the context and origin of the product being specified in this SRS.  
-For example, state whether this product is a follow-on member of a product 
-family, a replacement for certain existing systems, or a new, self-contained 
-product. If the SRS defines a component of a larger system, relate the 
-requirements of the larger system to the functionality of this software and 
-identify interfaces between the two. A simple diagram that shows the major 
-components of the overall system, subsystem interconnections, and external 
-interfaces can be helpful.$>$
+
+\begin{figure}[h!]
+\centering
+\includegraphics{1.png}
+
+\caption{SuperComputer overview diagram}
+\end{figure}
+
+
+
 
 \section{Product Functions}
 $<$Summarize the major functions the product must perform or must let the user 
