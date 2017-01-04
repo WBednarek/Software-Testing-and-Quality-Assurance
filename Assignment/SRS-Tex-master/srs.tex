@@ -137,54 +137,7 @@ IT Support                                                     & \begin{tabular}
 \section{Project Scope}
 
 This project provides complex supercomputer simulation which has 130 nodes with 16 cores per each. Simulation running according to scheduler which add each user job to queue. Scheduler is based on First-come, first-served behaviour.
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
 
-
-
-
-
-
-
-\begin{center}
-
-\begin{table}[h!]
-\centering
-\caption{Project scope table}
-\label{my-label}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Event Name                                                                  } & \textbf{Input} \& \textit{output                                                                                                     } & \textbf{Description                                                                                                                                                                                                       } \\ \hline
-Starting simulation                                                          & \textit{Computing all current jobs                                                                                          } & \begin{tabular}[c]{@{}l@{}}"Main functionality of supercomputer software;\\ simulation starts creating random users \\ and simulate real life computations adding each \\ user demand (job) to queue"\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}l@{}}Setting currnet \\ demand\end{tabular}            & \begin{tabular}[c]{@{}l@{}}\textbf{currentDemandNumber}, \\ \textit{computation resutls}\end{tabular}                                  & \begin{tabular}[c]{@{}l@{}}"Main functionality of user;\\ system's customer will be able to order \\ a job (computation)"\end{tabular}                                                                             \\ \hline
-Making users                                                                 & \textit{Users list                                                                                                          } & Creating users for simulation purposes                                                                                                                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}Estimating job \\ period\end{tabular}             & \begin{tabular}[c]{@{}l@{}}\textbf{userDemandType}, \\ \textit{Estiamted job time}\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Returning estimated time of demanded job \\ selected by user\end{tabular}                                                                                                               \\ \hline
-Listing jobs                                                                 & \textit{Job list                                                                                                            } & Users are able to view all jobs in queue                                                                                                                                                                           \\ \hline
-\begin{tabular}[c]{@{}l@{}}Providng \\ computation \\ resources\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Job estimated period}, \\ \textbf{numer of demanded cores},\\\textit{ Number of provided nodes}\end{tabular} & \begin{tabular}[c]{@{}l@{}}Providing resources for each demand, \\ checking if there are available cores and nodes.\end{tabular}                                                                                   \\ \hline
-Browsing statistics                                                          & \begin{tabular}[c]{@{}l@{}}\textit{Income, longest job,} \\ \textit{average jobs tim}e\end{tabular}                                    & \begin{tabular}[c]{@{}l@{}}All statistics are showed in a chosen period of \\ time (day/week/month/year)\end{tabular}                                                                                              \\ \hline
-\begin{tabular}[c]{@{}l@{}}Managing users \\ balance\end{tabular}            & \textit{Acctual balance                                                                                                     } & \begin{tabular}[c]{@{}l@{}}Notifying each user about their balance; \\ Checking if user balance is high enough \\ for performing selected job\end{tabular}                                                         \\ \hline
-Scheduling                                                                   & \textit{Maded Queue                                                                                                         } & \begin{tabular}[c]{@{}l@{}}Making queue using First-come, first-served \\ system\end{tabular}                                                                                                                      \\ \hline
-\end{tabular}
-\end{table}
-\end{center}
 
 
 
@@ -221,6 +174,28 @@ perform. Details will be provided in Section 3, so only a high level summary
 understandable to any reader of the SRS. A picture of the major groups of 
 related requirements and how they relate, such as a top level data flow diagram 
 or object class diagram, is often effective.$>$
+
+\begin{center}
+
+\begin{table}[h!]
+\centering
+\caption{Project scope table}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Event Name                                                                  } & \textbf{Input} \& \textit{output                                                                                                     } & \textbf{Description                                                                                                                                                                                                       } \\ \hline
+Starting simulation                                                          & \textit{Computing all current jobs                                                                                          } & \begin{tabular}[c]{@{}l@{}}"Main functionality of supercomputer software;\\ simulation starts creating random users \\ and simulate real life computations adding each \\ user demand (job) to queue"\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Setting currnet \\ demand\end{tabular}            & \begin{tabular}[c]{@{}l@{}}\textbf{currentDemandNumber}, \\ \textit{computation resutls}\end{tabular}                                  & \begin{tabular}[c]{@{}l@{}}"Main functionality of user;\\ system's customer will be able to order \\ a job (computation)"\end{tabular}                                                                             \\ \hline
+Making users                                                                 & \textit{Users list                                                                                                          } & Creating users for simulation purposes                                                                                                                                                                             \\ \hline
+\begin{tabular}[c]{@{}l@{}}Estimating job \\ period\end{tabular}             & \begin{tabular}[c]{@{}l@{}}\textbf{userDemandType}, \\ \textit{Estiamted job time}\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Returning estimated time of demanded job \\ selected by user\end{tabular}                                                                                                               \\ \hline
+Listing jobs                                                                 & \textit{Job list                                                                                                            } & Users are able to view all jobs in queue                                                                                                                                                                           \\ \hline
+\begin{tabular}[c]{@{}l@{}}Providng \\ computation \\ resources\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Job estimated period}, \\ \textbf{numer of demanded cores},\\\textit{ Number of provided nodes}\end{tabular} & \begin{tabular}[c]{@{}l@{}}Providing resources for each demand, \\ checking if there are available cores and nodes.\end{tabular}                                                                                   \\ \hline
+Browsing statistics                                                          & \begin{tabular}[c]{@{}l@{}}\textit{Income, longest job,} \\ \textit{average jobs tim}e\end{tabular}                                    & \begin{tabular}[c]{@{}l@{}}All statistics are showed in a chosen period of \\ time (day/week/month/year)\end{tabular}                                                                                              \\ \hline
+\begin{tabular}[c]{@{}l@{}}Managing users \\ balance\end{tabular}            & \textit{Acctual balance                                                                                                     } & \begin{tabular}[c]{@{}l@{}}Notifying each user about their balance; \\ Checking if user balance is high enough \\ for performing selected job\end{tabular}                                                         \\ \hline
+Scheduling                                                                   & \textit{Maded Queue                                                                                                         } & \begin{tabular}[c]{@{}l@{}}Making queue using First-come, first-served \\ system\end{tabular}                                                                                                                      \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
 
 \section{User Classes and Characteristics}
 
