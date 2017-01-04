@@ -16,12 +16,14 @@
 %http://www.se.rit.edu/~emad/teaching/slides/srs_template_sep14.pdf
 %http://karlwiegers.com
 \documentclass{scrreprt}
+
 \usepackage{listings}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -113,12 +115,6 @@ Document is created to be easy to read. Document contains many tables in order t
 \\
 \\
 \\
-
-\section{Project Scope}
-
-
-This project provides complex supercomputer simulation which has 130 nodes with 16 cores per each. Simulation running according to scheduler which add each user job to queue. Scheduler is based on First-come, first-served behaviour.
-
 \begin{table}[]
 \centering
 \caption{Informations to find for specific clients}
@@ -129,9 +125,65 @@ This project provides complex supercomputer simulation which has 130 nodes with 
 \begin{tabular}[c]{@{}l@{}}Investor \\ (Customer)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Project complexity with technical specifications. Functional and \\ Nonfunctional requirements. Idea of solution, system capacity \\ (storage, computation potential) and purposed price.\end{tabular}                                                                                                        \\ \hline
 Student                                                        & \begin{tabular}[c]{@{}l@{}}Use cases of student account shows possibilities of supercomputer usage. \\ What functions are provided for student’s account.\end{tabular}                                                                                                                                                                   \\ \hline
 Researcher                                                     & \begin{tabular}[c]{@{}l@{}}Everything what is important for students. Additionally information \\ about special features available only for Researchers like: \\ accelerated nodes for GPU computation.\end{tabular}                                                                                                                     \\ \hline
-IT Support                                                     & \begin{tabular}[c]{@{}l@{}}Details about Special IT support functions e.g. Statistics like:\\ power usage in current moment. Day, month; Usage of computational \\ resources in on live, average per day, week,,month etc. Access to\\  manage functions like: \\ turn on, turn off machine,disable computer functions etc.\end{tabular} \\ \hline
+IT Support                                                     & \begin{tabular}[c]{@{}l@{}}Details about Special IT support functions e.g. Statistics like:\\ power usage in current moment. Day, month; Usage of computational \\ resources on live, average per day, week,,month etc. Access to\\  manage functions like: \\ turn on, turn off machine,disable computer functions etc.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
+
+
+
+
+\section{Project Scope}
+
+This project provides complex supercomputer simulation which has 130 nodes with 16 cores per each. Simulation running according to scheduler which add each user job to queue. Scheduler is based on First-come, first-served behaviour.
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+
+
+
+
+
+
+\begin{center}
+
+\begin{table}[h!]
+\centering
+\caption{Project scope table}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Event Name                                                                  } & \textbf{Input} \& \textit{output                                                                                                     } & \textbf{Description                                                                                                                                                                                                       } \\ \hline
+Starting simulation                                                          & \textit{Computing all current jobs                                                                                          } & \begin{tabular}[c]{@{}l@{}}"Main functionality of supercomputer software;\\ simulation starts creating random users \\ and simulate real life computations adding each \\ user demand (job) to queue"\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Setting currnet \\ demand\end{tabular}            & \begin{tabular}[c]{@{}l@{}}\textbf{currentDemandNumber}, \\ \textit{computation resutls}\end{tabular}                                  & \begin{tabular}[c]{@{}l@{}}"Main functionality of user;\\ system's customer will be able to order \\ a job (computation)"\end{tabular}                                                                             \\ \hline
+Making users                                                                 & \textit{Users list                                                                                                          } & Creating users for simulation purposes                                                                                                                                                                             \\ \hline
+\begin{tabular}[c]{@{}l@{}}Estimating job \\ period\end{tabular}             & \begin{tabular}[c]{@{}l@{}}\textbf{userDemandType}, \\ \textit{Estiamted job time}\end{tabular}                                        & \begin{tabular}[c]{@{}l@{}}Returning estimated time of demanded job \\ selected by user\end{tabular}                                                                                                               \\ \hline
+Listing jobs                                                                 & \textit{Job list                                                                                                            } & Users are able to view all jobs in queue                                                                                                                                                                           \\ \hline
+\begin{tabular}[c]{@{}l@{}}Providng \\ computation \\ resources\end{tabular} & \begin{tabular}[c]{@{}l@{}}\textbf{Job estimated period}, \\ \textbf{numer of demanded cores},\\\textit{ Number of provided nodes}\end{tabular} & \begin{tabular}[c]{@{}l@{}}Providing resources for each demand, \\ checking if there are available cores and nodes.\end{tabular}                                                                                   \\ \hline
+Browsing statistics                                                          & \begin{tabular}[c]{@{}l@{}}\textit{Income, longest job,} \\ \textit{average jobs tim}e\end{tabular}                                    & \begin{tabular}[c]{@{}l@{}}All statistics are showed in a chosen period of \\ time (day/week/month/year)\end{tabular}                                                                                              \\ \hline
+\begin{tabular}[c]{@{}l@{}}Managing users \\ balance\end{tabular}            & \textit{Acctual balance                                                                                                     } & \begin{tabular}[c]{@{}l@{}}Notifying each user about their balance; \\ Checking if user balance is high enough \\ for performing selected job\end{tabular}                                                         \\ \hline
+Scheduling                                                                   & \textit{Maded Queue                                                                                                         } & \begin{tabular}[c]{@{}l@{}}Making queue using First-come, first-served \\ system\end{tabular}                                                                                                                      \\ \hline
+\end{tabular}
+\end{table}
+\end{center}
+
 
 
 
@@ -141,6 +193,7 @@ include user interface style guides, contracts, standards, system requirements
 specifications, use case documents, or a vision and scope document. Provide 
 enough information so that the reader could access a copy of each reference, 
 including title, author, version number, date, and source or location.$>$
+
 
 
 \chapter{Overall Description}
