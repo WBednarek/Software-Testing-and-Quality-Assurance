@@ -39,6 +39,7 @@ void User::setAccountType(int accountTypeNum) {
 
 }
 
+
 const std::string &User::getAccountTypeName() const {
     return accountTypeName;
 }
