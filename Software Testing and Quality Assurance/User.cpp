@@ -5,8 +5,9 @@ User::User() : userBalance(100)
 {
 }
 
-User::User(int accountTypeNumber) : userBalance(100) {
+User::User(int accountTypeNumber, unsigned int userID) : userBalance(100) {
     setAccountType(accountTypeNumber);
+    (*this).userID = userID;
 }
 
 
@@ -66,6 +67,7 @@ unsigned int User::getCurrnetDemand() const {
     return currnetDemand;
 }
 
+//Job demand from user. Numbers from 0 to
 void User::setCurrnetDemand(unsigned int currnetDemandNumber) {
     User::currnetDemand = currnetDemandNumber;
 }
@@ -76,4 +78,8 @@ double User::getTimeOfCurrentJob() const {
 
 void User::setTimeOfCurrentJob(double timeOfCurrentJob) {
     User::timeOfCurrentJob = timeOfCurrentJob;
+}
+
+int User::getUserID() const {
+    return userID;
 }

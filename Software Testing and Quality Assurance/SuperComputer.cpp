@@ -2,14 +2,18 @@
 #include "JobTimeEstimator.h"
 
 
-SuperComputer::SuperComputer()
-{
+SuperComputer::SuperComputer() : jobCostPerMinute(0.001) {
+
     initialiseListOfNodes();
 }
 
 
-SuperComputer::~SuperComputer()
-{
+SuperComputer::SuperComputer(std::vector<User> listOfUsers) : jobCostPerMinute(0.001) {
+
+    (*this).superComputerUsersList = listOfUsers;
+}
+
+SuperComputer::~SuperComputer() {
 }
 
 void SuperComputer::initialiseListOfNodes() {
@@ -34,18 +38,21 @@ Node SuperComputer::getNode(unsigned int numberOfNode) {
         std::cout << "Standard exception: " << e.what() << std::endl;
     }
 
+}
+
+
+void SuperComputer::calculateUserDemandCost() {
+
+
+    for (auto &user : superComputerUsersList) {
+        estimateWorkperiod(user);
+        //Calculating cost for selected job job
+        user.setUserBalance(user.getUserBalance() - (user.getTimeOfCurrentJob() * jobCostPerMinute));
+    }
 
 }
 
-void SuperComputer::listOfActualJobs() {
-
-}
-
-void SuperComputer::calculateUserDemand(User u) {
-    // estimateWorkperiod();
-}
-
-void SuperComputer::estimateWorkperiod(User user) {
+void SuperComputer::estimateWorkperiod(User &user) {
     //Short job
     if (user.getCurrnetDemand() == 0) {
         user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(0));
@@ -56,6 +63,16 @@ void SuperComputer::estimateWorkperiod(User user) {
         user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(2));
     } else if (user.getCurrnetDemand() == 3) {
         user.setTimeOfCurrentJob(JobTimeEstimator::estimateJobTime(3));
+    }
+
+}
+
+void SuperComputer::listOfActualJobs() {
+    calculateUserDemandCost();
+    std::cout << "USER ID\t\t" << "USER Balance\t" << "Estimated job time\t" << "USER Type\n" << std::endl;
+    for (auto user : superComputerUsersList) {
+        std::cout << user.getUserID() << "\t\t" << user.getUserBalance() << "\t\t" << user.getTimeOfCurrentJob()
+                  << "\t\t\t" << user.getAccountTypeName() << "\n" << std::endl;
     }
 
 }

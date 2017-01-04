@@ -5,9 +5,10 @@
 
 class User {
 
-    int userBalance;
-    unsigned int numberOfJobsInQueue;
+    int userID;
     int prioryty;
+    double userBalance;
+    unsigned int numberOfJobsInQueue;
     std::string accountTypeName;
     unsigned int currnetDemand;
     double timeOfCurrentJob;
@@ -16,7 +17,7 @@ class User {
 public:
     User();
 
-    User(int accountTypeNumber);
+    User(int accountTypeNumber, unsigned int userID);
 
     ~User();
 
@@ -41,5 +42,7 @@ public:
     double getTimeOfCurrentJob() const;
 
     void setTimeOfCurrentJob(double timeOfCurrentJob);
+
+    int getUserID() const;
 };
 

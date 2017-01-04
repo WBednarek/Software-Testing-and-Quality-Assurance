@@ -7,13 +7,17 @@
 class SuperComputer
 {
 
-    const int numberOfNodes = 128;
+    static const int numberOfNodes = 128;
     std::vector<Node> computerNodes;
+    double jobCostPerMinute;
+    std::vector<User> superComputerUsersList;
 	
 
 
 public:
 	SuperComputer();
+
+    SuperComputer(std::vector<User> listOfUsers);
 	~SuperComputer();
 
     void initialiseListOfNodes();
@@ -22,8 +26,8 @@ public:
 
     void listOfActualJobs();
 
-    void calculateUserDemand(User u);
+    void calculateUserDemandCost();
 
-    void estimateWorkperiod(User user);
+    void estimateWorkperiod(User &user);
 };
 
