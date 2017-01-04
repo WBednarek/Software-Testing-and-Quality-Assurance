@@ -27,11 +27,11 @@ public:
 
     int getPrioryty() const;
 
-    int getUserBalance() const;
+    double getUserBalance() const;
 
     unsigned int getNumberOfJobsInQueue() const;
 
-    void setUserBalance(int userBalance);
+    void setUserBalance(double userBalance);
 
     void setNumberOfJobsInQueue(unsigned int numberOfJobsInQueue);
 

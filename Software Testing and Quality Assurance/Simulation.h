@@ -5,6 +5,8 @@
 #include <ctime>
 #include <conio.h>
 #include <windows.h>
+#include <chrono>
+#include <random>
 #ifndef SOFTWARE_TESTING_AND_QUALITY_ASSURANCE_SIMULATION_H
 #define SOFTWARE_TESTING_AND_QUALITY_ASSURANCE_SIMULATION_H
 

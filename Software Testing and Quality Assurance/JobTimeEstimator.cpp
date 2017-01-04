@@ -1,5 +1,4 @@
-#include <random>
-#include <chrono>
+
 #include "JobTimeEstimator.h"
 
 double JobTimeEstimator::estimateJobTime(int jobType) {
@@ -7,39 +6,39 @@ double JobTimeEstimator::estimateJobTime(int jobType) {
 
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::default_random_engine dre(seed);
-
+    Sleep(2);
 
     //Short job
     if (jobType == 0) {
-        srand(time(NULL));
+
         //Job time in minutes
         std::uniform_int_distribution<int> gen(1, 60);
         estimatedTime = gen(dre);
     }
         //Medium-size job
     else if (jobType == 1) {
-        srand(time(NULL));
+
         //Job time in minutes
-        std::uniform_int_distribution<int> gen(1, 480);
-        estimatedTime = gen(dre);
+        std::uniform_int_distribution<int> gen2(1, 480);
+        estimatedTime = gen2(dre);
     }
         //Large job
     else if (jobType == 2) {
-        srand(time(NULL));
+
         //Job time in minutes
-        std::uniform_int_distribution<int> gen(1, 960);
-        estimatedTime = gen(dre);
+        std::uniform_int_distribution<int> gen3(1, 960);
+        estimatedTime = gen3(dre);
     }
         //Huge job
     else if (jobType == 3) {
-        srand(time(NULL));
+
         //Job time in minutes
-        std::uniform_int_distribution<int> gen(1000, 20000);
-        estimatedTime = rand() % (20000) + 1000;
+        std::uniform_int_distribution<int> gen4(1000, 20000);
+        estimatedTime = gen4(dre);
     } else {
-        srand(time(NULL));
+        std::uniform_int_distribution<int> gen5(1, 480);
         std::cout << "No such job\nSetting default size as Medium-size job" << std::endl;
-        estimatedTime = rand() % (480) + 1;
+        estimatedTime = gen5(dre);
     }
 
     return estimatedTime;

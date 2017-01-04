@@ -2,8 +2,7 @@
 // Created by Wiktor Bednarek
 //
 
-#include <chrono>
-#include <random>
+
 #include "Simulation.h"
 
 Simulation::Simulation() : areUsersMade(false) {

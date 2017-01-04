@@ -2,7 +2,7 @@
 #include "JobTimeEstimator.h"
 
 
-SuperComputer::SuperComputer() : jobCostPerMinute(0.001) {
+SuperComputer::SuperComputer() : jobCostPerMinute(0.1) {
 
     initialiseListOfNodes();
 }
@@ -14,6 +14,11 @@ SuperComputer::SuperComputer(std::vector<User> listOfUsers) : jobCostPerMinute(0
 }
 
 SuperComputer::~SuperComputer() {
+}
+
+
+double SuperComputer::getSuperComputerIncome() const {
+    return superComputerIncome;
 }
 
 void SuperComputer::initialiseListOfNodes() {
@@ -43,11 +48,13 @@ Node SuperComputer::getNode(unsigned int numberOfNode) {
 
 void SuperComputer::calculateUserDemandCost() {
 
-
     for (auto &user : superComputerUsersList) {
         estimateWorkperiod(user);
         //Calculating cost for selected job job
+
         user.setUserBalance(user.getUserBalance() - (user.getTimeOfCurrentJob() * jobCostPerMinute));
+        superComputerIncome += (user.getTimeOfCurrentJob() * jobCostPerMinute);
+
     }
 
 }
@@ -69,10 +76,12 @@ void SuperComputer::estimateWorkperiod(User &user) {
 
 void SuperComputer::listOfActualJobs() {
     calculateUserDemandCost();
-    std::cout << "USER ID\t\t" << "USER Balance\t" << "Estimated job time\t" << "USER Type\n" << std::endl;
+    std::cout << "USER ID\t\t" << "USER Balance\t" << "Estimated job time(min)\t" << "USER Type\n" << std::endl;
     for (auto user : superComputerUsersList) {
         std::cout << user.getUserID() << "\t\t" << user.getUserBalance() << "\t\t" << user.getTimeOfCurrentJob()
                   << "\t\t\t" << user.getAccountTypeName() << "\n" << std::endl;
     }
-
+    std::cout << "\nTotal earnings: " << (*this).getSuperComputerIncome() << std::endl;
 }
+
+

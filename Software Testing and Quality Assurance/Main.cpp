@@ -14,10 +14,8 @@ int main() {
     cout << "Welcome to supercomputer symulation system\n";
     cout << "Number of cores in node: " << node1.getNumberOfCores() << std::endl;
 
-    cout << "What would you like to do?\n\n 1. Log in to existing account\n 2. Add new account\n" << std::endl;
 
-
-    Simulation sim(7);
+    Simulation sim(20);
     sim.startSimulation();
     //system("pause");
     return 0;

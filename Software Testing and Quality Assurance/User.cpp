@@ -1,11 +1,11 @@
 #include "User.h"
 
 
-User::User() : userBalance(100)
+User::User() : userBalance(1000)
 {
 }
 
-User::User(int accountTypeNumber, unsigned int userID) : userBalance(100) {
+User::User(int accountTypeNumber, unsigned int userID) : userBalance(1000) {
     setAccountType(accountTypeNumber);
     (*this).userID = userID;
 }
@@ -47,7 +47,7 @@ int User::getPrioryty() const {
     return prioryty;
 }
 
-int User::getUserBalance() const {
+double User::getUserBalance() const {
     return userBalance;
 }
 
@@ -55,7 +55,7 @@ unsigned int User::getNumberOfJobsInQueue() const {
     return numberOfJobsInQueue;
 }
 
-void User::setUserBalance(int userBalance) {
+void User::setUserBalance(double userBalance) {
     User::userBalance = userBalance;
 }
 

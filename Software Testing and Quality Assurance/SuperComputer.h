@@ -11,7 +11,7 @@ class SuperComputer
     std::vector<Node> computerNodes;
     double jobCostPerMinute;
     std::vector<User> superComputerUsersList;
-	
+	double superComputerIncome;
 
 
 public:
@@ -29,5 +29,7 @@ public:
     void calculateUserDemandCost();
 
     void estimateWorkperiod(User &user);
+
+	double getSuperComputerIncome() const;
 };
 
