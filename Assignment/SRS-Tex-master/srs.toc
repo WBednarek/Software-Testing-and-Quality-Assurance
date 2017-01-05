@@ -20,17 +20,38 @@
 \contentsline {chapter}{\numberline {4}System Features}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}System Feature - Starting simulation}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Description and Priority}{13}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Functional Requirements}{13}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}System Feature 2 (and so on)}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.2}Functional Requirements}{15}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}System Feature - Calculating current user's demand}{15}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Description and Priority}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Functional Requirements}{15}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Other Nonfunctional Requirements}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Performance Requirements}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}Safety Requirements}{16}{section.5.2}
-\contentsline {section}{\numberline {5.3}Security Requirements}{16}{section.5.3}
-\contentsline {section}{\numberline {5.4}Software Quality Attributes}{16}{section.5.4}
-\contentsline {section}{\numberline {5.5}Business Rules}{17}{section.5.5}
-\contentsline {chapter}{\numberline {6}Other Requirements}{18}{chapter.6}
-\contentsline {section}{\numberline {6.1}Appendix A: Glossary}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}Appendix B: Analysis Models}{18}{section.6.2}
-\contentsline {section}{\numberline {6.3}Appendix C: To Be Determined List}{18}{section.6.3}
+\contentsline {subsection}{\numberline {4.2.2}Functional Requirements}{16}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}System Feature - Making users}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Description and Priority}{16}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Functional Requirements}{16}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}System Feature - Estimating job period}{16}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Description and Priority}{16}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Functional Requirements}{17}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}System Feature - Listing jobs}{17}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Description and Priority}{17}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Functional Requirements}{18}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}System Feature - Providing computation resources}{18}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Description and Priority}{18}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Functional Requirements}{18}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}System Feature - Browsing statistics}{18}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Description and Priority}{18}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Functional Requirements}{18}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}System Feature - Managing users balance}{18}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Description and Priority}{18}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Functional Requirements}{19}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}System Feature - Scheduling}{19}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Description and Priority}{19}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Functional Requirements}{19}{subsection.4.9.2}
+\contentsline {chapter}{\numberline {5}Other Nonfunctional Requirements}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Performance Requirements}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Safety Requirements}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}Security Requirements}{20}{section.5.3}
+\contentsline {section}{\numberline {5.4}Software Quality Attributes}{20}{section.5.4}
+\contentsline {section}{\numberline {5.5}Business Rules}{21}{section.5.5}
+\contentsline {chapter}{\numberline {6}Other Requirements}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Appendix A: Glossary}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Appendix B: Analysis Models}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}Appendix C: To Be Determined List}{22}{section.6.3}

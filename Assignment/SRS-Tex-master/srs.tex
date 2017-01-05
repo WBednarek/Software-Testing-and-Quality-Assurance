@@ -415,7 +415,7 @@ Crucial system feature. Starts whole simulation and shows all job in queue.
 
 \begin{table}[h!]
 \centering
-\caption{My caption}
+\caption{Starting simulation Functional Requirements}
 \label{my-label}
 \begin{tabular}{|l|l|}
 \hline
@@ -434,25 +434,178 @@ History:              & Created December 28, 2016                               
 
 
 
-\section{System Feature 2 (and so on)}
+\section{System Feature - Calculating current user's demand }
 
 
-$<$Don’t really say “System Feature 1.” State the feature name in just a few 
-words.$>$
 
 \subsection{Description and Priority}
-$<$Provide a short description of the feature and indicate whether it is of 
-High, Medium, or Low priority. You could also include specific priority 
-component ratings, such as benefit, penalty, cost, and risk (each rated on a 
-relative scale from a low of 1 to a high of 9).$>$
+This is the most important feature of supercomputer. It gets job defined by user and it perform calculations. System returns output files alter computations. It is important that not each job could be performed each time e.g. user doesn't have enough credits on his account.
+\\
+\\
+\textbf{Feature Priority: } 9
+
+\subsection{Functional Requirements}
+
+\begin{table}[h!]
+\centering
+\caption{Calculating current user's demand Functional Requirements}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Calculating current demand}}                                                                                                          \\ \hline
+Requirement \#: 5     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: \\ Student - 1; \\ Researcher - 1,4; \\ IT Support - 1,4,;\end{tabular}                      \\ \hline
+Description:          & Calculating ordered job and returning result output                                                                                        \\ \hline
+Rationale:            & Calculating job selected by user                                                                                                           \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                                   \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Job has to be solved as soon as possible. User will\\ get retult output file afrer job is finished\end{tabular} \\ \hline
+Priority:             & 9                                                                                                                                          \\ \hline
+Conflicts             & -                                                                                                                                          \\ \hline
+Supporting Materials: & -                                                                                                                                          \\ \hline
+History:              & Created December 28, 2016                                                                                                                  \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\section{System Feature - Making users }
+
+
+
+\subsection{Description and Priority}
+Making random users for simulation purpose. Users type is randomly chosen and rach user job complexity is randomly generated as well.
+\\
+\\
+\textbf{Feature Priority: } 5
+
+\subsection{Functional Requirements}
+
+\begin{table}[]
+\centering
+\caption{Making users Functional Requirements}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Making users}}                                                                                              \\ \hline
+Requirement \#: 6     & Event/use case \#:                                                                                               \\ \hline
+Description:          & Making random user for simulation                                                                                \\ \hline
+Rationale:            & Returning list of random users                                                                                   \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                         \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Users have to be different and their \\ job need to be different as well\end{tabular} \\ \hline
+Priority:             & 5                                                                                                                \\ \hline
+Conflicts             & -                                                                                                                \\ \hline
+Supporting Materials: & -                                                                                                                \\ \hline
+History:              & Created December 28, 2016                                                                                        \\ \hline
+\end{tabular}
+\end{table}
+
+\section{System Feature - Estimating job period }
+
+\subsection{Description and Priority}
+Despite of users choose flag how big (complex) is demand: Small, Medium, Large or Huge supercomputer tries to estimate real computation time in order to manage job queue efficiently.  
+
+\textbf{Feature Priority: } 6
+
+\subsection{Functional Requirements}
+
+\begin{table}[h!]
+\centering
+\caption{Estimating job period Functional Requirements}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Calculating currnet demand}}                                                                                                   \\ \hline
+Requirement \#: 6     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: \\ Student - 1; \\ Researcher - 1,4; \\ IT Support - 1,4,;\end{tabular}               \\ \hline
+Description:          & Estimatingj ob period                                                                                                               \\ \hline
+Rationale:            & \begin{tabular}[c]{@{}l@{}}Returning\\ estimated time of demanded job selected by user\end{tabular}                                 \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                            \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}System tries to estimate computation period independly\\ of user declration of job duration\end{tabular} \\ \hline
+Priority:             & 6                                                                                                                                   \\ \hline
+Conflicts             & -                                                                                                                                   \\ \hline
+Supporting Materials: & -                                                                                                                                   \\ \hline
+History:              & Created December 28, 2016                                                                                                           \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{System Feature - Listing jobs }
+
+
+\subsection{Description and Priority}
+
+Function that list all current jobs in queue.
+\\
+\\
+\textbf{Feature Priority: } 4
+
+\subsection{Functional Requirements}
+
+\begin{table}[h!]
+\centering
+\caption{Listing jobs Functional Requirementsn}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Listing jobs}}                                                                                                       \\ \hline
+Requirement \#: 7     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: \\ Student - 1; \\ Researcher - 1,4; \\ IT Support - 1,4;\end{tabular}      \\ \hline
+Description:          & Listing all jobs in queue                                                                                                 \\ \hline
+Rationale:            & Returning list with actual jobs in queue                                                                                  \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                  \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Return actual job queue in system.\\ Show how much time left to end \\ each job .\end{tabular} \\ \hline
+Priority:             & 4                                                                                                                         \\ \hline
+Conflicts             & -                                                                                                                         \\ \hline
+Supporting Materials: & -                                                                                                                         \\ \hline
+History:              & Created December 28, 2016                                                                                                 \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\section{System Feature - Providing computation resources  }
+
+\subsection{Description and Priority}
+Super computer (in spite of it's huge power) as every computer has limitations.
+To manage all demands First come, first served  (FCFS) service policy had been used in this supercomputer system. Also there are three types of job size declared by user: Small, Medium, Large, Huge and user can also declare how many cores he needs. This feature assign resources according to job estimated duration. For example for huge jobs computer can grant 4 nodes with 16 cores to use.
+\textbf{Feature Priority: } 9
+
+\subsection{Functional Requirements}
+
+
+
+
+\section{System Feature - Browsing statistics  }
+
+\subsection{Description and Priority}
+
+\textbf{Feature Priority: } 9
+
+\subsection{Functional Requirements}
+
+
+
+
+\section{System Feature - Managing users balance   }
+
+\subsection{Description and Priority}
+
+\textbf{Feature Priority: } 9
+
+\subsection{Functional Requirements}
+
+
+
+\section{System Feature - Scheduling }
+
+\subsection{Description and Priority}
+
+\textbf{Feature Priority: } 9
 
 \subsection{Functional Requirements}
 
 
 
 \chapter{Other Nonfunctional Requirements}
-
-
 
 \section{Performance Requirements}
 $<$If there are performance requirements for the product under various 
