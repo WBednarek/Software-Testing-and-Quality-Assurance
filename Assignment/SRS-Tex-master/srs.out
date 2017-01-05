@@ -14,40 +14,37 @@
 \BOOKMARK [0][-]{chapter.3}{External Interface Requirements}{}% 14
 \BOOKMARK [1][-]{section.3.1}{User Interfaces}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.2}{Hardware Interfaces}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.3}{Software Interfaces}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.4}{Communications Interfaces}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{System Features}{}% 19
-\BOOKMARK [1][-]{section.4.1}{System Feature - Starting simulation}{chapter.4}% 20
-\BOOKMARK [2][-]{subsection.4.1.1}{Description and Priority}{section.4.1}% 21
-\BOOKMARK [2][-]{subsection.4.1.2}{Functional Requirements}{section.4.1}% 22
-\BOOKMARK [1][-]{section.4.2}{System Feature - Calculating current user's demand}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{Description and Priority}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{Functional Requirements}{section.4.2}% 25
-\BOOKMARK [1][-]{section.4.3}{System Feature - Making users}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.3.1}{Description and Priority}{section.4.3}% 27
-\BOOKMARK [2][-]{subsection.4.3.2}{Functional Requirements}{section.4.3}% 28
-\BOOKMARK [1][-]{section.4.4}{System Feature - Estimating job period}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.1}{Description and Priority}{section.4.4}% 30
-\BOOKMARK [2][-]{subsection.4.4.2}{Functional Requirements}{section.4.4}% 31
-\BOOKMARK [1][-]{section.4.5}{System Feature - Listing jobs}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.5.1}{Description and Priority}{section.4.5}% 33
-\BOOKMARK [2][-]{subsection.4.5.2}{Functional Requirements}{section.4.5}% 34
-\BOOKMARK [1][-]{section.4.6}{System Feature - Providing computation resources}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.6.1}{Description and Priority}{section.4.6}% 36
-\BOOKMARK [2][-]{subsection.4.6.2}{Functional Requirements}{section.4.6}% 37
-\BOOKMARK [1][-]{section.4.7}{System Feature - Browsing statistics}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.7.1}{Description and Priority}{section.4.7}% 39
-\BOOKMARK [2][-]{subsection.4.7.2}{Functional Requirements}{section.4.7}% 40
-\BOOKMARK [1][-]{section.4.8}{System Feature - Managing users balance}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.8.1}{Description and Priority}{section.4.8}% 42
-\BOOKMARK [2][-]{subsection.4.8.2}{Functional Requirements}{section.4.8}% 43
-\BOOKMARK [0][-]{chapter.5}{Other Nonfunctional Requirements}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Performance Requirements}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.2}{Safety Requirements}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.3}{Security Requirements}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.4}{Software Quality Attributes}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.5}{Business Rules}{chapter.5}% 49
-\BOOKMARK [0][-]{chapter.6}{Other Requirements}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Appendix A: Glossary}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.2}{Appendix B: Analysis Models}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.3}{Appendix C: To Be Determined List}{chapter.6}% 53
+\BOOKMARK [0][-]{chapter.4}{System Features}{}% 17
+\BOOKMARK [1][-]{section.4.1}{System Feature - Starting simulation}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.1.1}{Description and Priority}{section.4.1}% 19
+\BOOKMARK [2][-]{subsection.4.1.2}{Functional Requirements}{section.4.1}% 20
+\BOOKMARK [1][-]{section.4.2}{System Feature - Calculating current user's demand}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.2.1}{Description and Priority}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.2}{Functional Requirements}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{System Feature - Making users}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Description and Priority}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Functional Requirements}{section.4.3}% 26
+\BOOKMARK [1][-]{section.4.4}{System Feature - Estimating job period}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.4.1}{Description and Priority}{section.4.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.2}{Functional Requirements}{section.4.4}% 29
+\BOOKMARK [1][-]{section.4.5}{System Feature - Listing jobs}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.5.1}{Description and Priority}{section.4.5}% 31
+\BOOKMARK [2][-]{subsection.4.5.2}{Functional Requirements}{section.4.5}% 32
+\BOOKMARK [1][-]{section.4.6}{System Feature - Providing computation resources}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.6.1}{Description and Priority}{section.4.6}% 34
+\BOOKMARK [2][-]{subsection.4.6.2}{Functional Requirements}{section.4.6}% 35
+\BOOKMARK [1][-]{section.4.7}{System Feature - Browsing statistics}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.7.1}{Description and Priority}{section.4.7}% 37
+\BOOKMARK [2][-]{subsection.4.7.2}{Functional Requirements}{section.4.7}% 38
+\BOOKMARK [1][-]{section.4.8}{System Feature - Managing users balance}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.8.1}{Description and Priority}{section.4.8}% 40
+\BOOKMARK [2][-]{subsection.4.8.2}{Functional Requirements}{section.4.8}% 41
+\BOOKMARK [0][-]{chapter.5}{Other Nonfunctional Requirements}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Performance Requirements}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{Safety Requirements}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.3}{Security Requirements}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.4}{Software Quality Attributes}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.5}{Business Rules}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Other Requirements}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Appendix A: Glossary}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Appendix B: Analysis Models}{chapter.6}% 50
