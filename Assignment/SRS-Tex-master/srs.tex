@@ -25,6 +25,7 @@
 \usepackage{booktabs}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{graphicx}
+\usepackage{placeins}
 \graphicspath{ {images/} }
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
@@ -130,7 +131,7 @@ Researcher                                                     & \begin{tabular}
 IT Support                                                     & \begin{tabular}[c]{@{}l@{}}Details about Special IT support functions e.g. Statistics like:\\ power usage in current moment. Day, month; Usage of computational \\ resources on live, average per day, week,,month etc. Access to\\  manage functions like: \\ turn on, turn off machine,disable computer functions etc.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 
@@ -151,7 +152,7 @@ Supercomputer      & \begin{tabular}[c]{@{}l@{}}Manage  all computer nodes;\\ Ca
 Job time estimator & Estimates job time                                                                                                                                                                                    \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 \section{References}
@@ -179,7 +180,7 @@ Product was designed as completely new supercomputer solution, not upgrade or re
 \caption{SuperComputer overview diagram.}
 Source: https://commons.wikimedia.org/wiki/File:Wide-angle_view_of_the_ALMA_correlator.jpg
 \end{figure}
-
+\FloatBarrier
 
 
 
@@ -207,7 +208,7 @@ Scheduling                                                                   & \
 \end{tabular}
 \end{table}
 \end{center}
-
+\FloatBarrier
 
 
 
@@ -305,7 +306,7 @@ Supporting Materials: - & None                                                  
 History:                & Created December 20, 2016                                                                                                                                                                              \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 
@@ -327,7 +328,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 20, 2016                                                                                                    \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 \section{Hardware Interfaces}
 
 
@@ -349,7 +350,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 20, 2016                                                                                                            \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 
@@ -361,20 +362,21 @@ History:              & Created December 20, 2016                               
 \includegraphics{modelStudent.png}
 \caption{User Student use case diagram}
 \end{figure}
-
+\FloatBarrier
 
 \begin{figure}[h!]
 \centering
 \includegraphics{modelResearcher.png}
 \caption{User Researcher use case diagram}
 \end{figure}
-
+\FloatBarrier
 
 \begin{figure}[h!]
 \centering
 \includegraphics{modelIT.png}
 \caption{IT Support use case diagram}
 \end{figure}
+\FloatBarrier
 
 \section{System Feature - Starting simulation}
 
@@ -409,8 +411,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                                                                                                                                                                     \\ \hline
 \end{tabular}
 \end{table}
-
-
+\FloatBarrier
 
 \section{System Feature - Calculating current user's demand }
 
@@ -442,7 +443,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                                  \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 
@@ -477,7 +478,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 \section{System Feature - Estimating job period }
 
 \subsection{Description and Priority}
@@ -505,7 +506,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                           \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \section{System Feature - Listing jobs }
 
@@ -537,7 +538,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                 \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 \section{System Feature - Providing computation resources  }
@@ -569,7 +570,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                 \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \section{System Feature - Browsing statistics  }
 
@@ -601,7 +602,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 28, 2016                                                                                                 \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 
@@ -611,8 +612,7 @@ History:              & Created December 28, 2016                               
 
 \subsection{Description and Priority}
 Information feature for users about their current balance. Users can easily check if they can afford for selected job.
-\\
-\\
+
 \textbf{Feature Priority: } 2
 
 \subsection{Functional Requirements}
@@ -667,7 +667,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \begin{table}[h!]
 \centering
@@ -690,7 +690,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \section{Safety Requirements}
 
@@ -717,14 +717,14 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 \section{Security Requirements}
 
 
-\begin{table}[h!]
+\begin{table}[!h]
 \centering
 \caption{Security Requirements}
-\label{my-label}
+\label{my-label10}
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{2}{|l|}{\textbf{Security Requirements}}                                                                                                       \\ \hline
@@ -742,6 +742,8 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
+\FloatBarrier
+
 
 
 
@@ -769,7 +771,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \begin{table}[h!]
 \centering
@@ -792,9 +794,8 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
+\FloatBarrier
 
-
-\section{Business Rules}
 
 
 \chapter{Other Requirements}
@@ -822,7 +823,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 
 \begin{table}[h!]
@@ -846,7 +847,7 @@ Supporting Materials: & -                                                       
 History:              & Created December 30, 2016                                                                                        \\ \hline
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 \section{Appendix A: Glossary}
 
@@ -867,7 +868,7 @@ History:              & Created December 30, 2016                               
 \begin{figure}[h!]
 \centering
 \includegraphics{ClassDiagram.png}
-\caption{SuperComputer overview diagram.}
+\caption{SuperComputer UML diagram}
 
 \end{figure}
 
