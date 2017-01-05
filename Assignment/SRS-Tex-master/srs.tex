@@ -138,16 +138,32 @@ IT Support                                                     & \begin{tabular}
 
 This project provides complex supercomputer simulation which has 130 nodes with 16 cores per each. Simulation running according to scheduler which add each user job to queue. Scheduler is based on First-come, first-served behaviour.
 
-
+\begin{table}[h!]
+\centering
+\caption{Basic scope of project}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Name}      & \textbf{Description}                                                                                                                                                                                  \\ \hline
+Simulation         & \begin{tabular}[c]{@{}l@{}}Starts simulation with all scheduled jobs;\\ Creates users;\end{tabular}                                                                                                   \\ \hline
+Users              & \begin{tabular}[c]{@{}l@{}}Have unique userID; \\ Holds information about account type:\\ Student, Researcher or IT Support;\\ Defines type of job demand: \\ Small, Medium, Large, Huge\end{tabular} \\ \hline
+Supercomputer      & \begin{tabular}[c]{@{}l@{}}Manage  all computer nodes;\\ Calculates job cost per minute;\\ All users are stored onsupercomputer;s \\ internal storage (database);\end{tabular}                        \\ \hline
+Job time estimator & Estimates job time                                                                                                                                                                                    \\ \hline
+\end{tabular}
+\end{table}
 
 
 
 \section{References}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+
+\begin{itemize}
+\item http://www.ibm.com/developerworks/rational/library/content/legacy/parttwo/1000/0670/0670_Schneider_Ch07.pdf
+\item http://www.bredemeyer.com/pdf_files/functreq.pdf
+\item Writing Effective Use Cases 1st Addison-Wesley Longman Publishing Co., Inc. Boston, MA, USA ©2000
+ISBN:0201702258 
+\item Software Requirements and Specifications: A Lexicon of Practice, Principles and Prejudices, M. Jackson, 1995
+\end{itemize}
+
 
 
 
@@ -160,20 +176,15 @@ Product was designed as completely new supercomputer solution, not upgrade or re
 \begin{figure}[h!]
 \centering
 \includegraphics{1.png}
-
-\caption{SuperComputer overview diagram}
+\caption{SuperComputer overview diagram.}
+Source: https://commons.wikimedia.org/wiki/File:Wide-angle_view_of_the_ALMA_correlator.jpg
 \end{figure}
 
 
 
 
 \section{Product Functions}
-$<$Summarize the major functions the product must perform or must let the user 
-perform. Details will be provided in Section 3, so only a high level summary 
-(such as a bullet list) is needed here. Organize the functions to make them 
-understandable to any reader of the SRS. A picture of the major groups of 
-related requirements and how they relate, such as a top level data flow diagram 
-or object class diagram, is often effective.$>$
+
 
 \begin{center}
 
@@ -197,51 +208,62 @@ Scheduling                                                                   & \
 \end{table}
 \end{center}
 
-\section{User Classes and Characteristics}
-
-
-
-
-
-$<$Identify the various user classes that you anticipate will use this product.  
-User classes may be differentiated based on frequency of use, subset of product 
-functions used, technical expertise, security or privilege levels, educational 
-level, or experience. Describe the pertinent characteristics of each user class.  
-Certain requirements may pertain only to certain user classes. Distinguish the 
-most important user classes for this product from those who are less important 
-to satisfy.$>$
-
 
 
 
 
 \section{Operating Environment}
-$<$Describe the environment in which the software will operate, including the 
-hardware platform, operating system and versions, and any other software 
-components or applications with which it must peacefully coexist.$>$
+
+
+
+System was developed for following working environment:
+\\
+\\
+Software:
+\begin{itemize}
+\item  Windows systems( versions 7/8/10)
+\item  Linux Ubuntu Server, Debian
+\end{itemize}
+ 
+Hardware:
+\begin{itemize}
+\item   Athos - iDataPlex DX360M4, Intel Xeon E5-2697v2 12C 2.700GHz, Infiniband FDR14
+IBM 	
+\item  138 Nodes (including two accelerated nodes and  six specialized nodes,  using for rendering and visualization of complex data)
+\item 50 PB of storage
+\item 128 GB DDR4 Ram per node
+\end{itemize}
 
 \section{Design and Implementation Constraints}
 
 
 
-$<$Describe any items or issues that will limit the options available to the 
-developers. These might include: corporate or regulatory policies; hardware 
-limitations (timing requirements, memory requirements); interfaces to other 
-applications; specific technologies, tools, and databases to be used; parallel 
-operations; language requirements; communications protocols; security 
-considerations; design conventions or programming standards (for example, if the 
-customer’s organization will be responsible for maintaining the delivered 
-software).$>$
+\textbf{Budget:} \pounds 500 000
 
-
+\textbf{Time:} 2 months
+\\
+\\
+\textbf{Crucial constraints:}
+\begin{itemize}
+\item   Time constraint 
+\item  Performing proper tests. Consider all cases and potential errors places or exceptional situations is unlikely
+\item Limited budget
+\item Sustaining highest possible performance having reliable system is difficult to implement and to maintain
+\item Demand of high C++ knowledge in developer team, it could be hard to get specialist and introduce him to project with constrained time 
+\item For enormous jobs there could be lack of operating memory
+\item Limited storage gives constraint of less regular backup making
+\item Physical machine have to be stored in appropriate conditions, in room with air-conditioning
+\end{itemize}
+ 
 
 
 \section{User Documentation}
 
-
-$<$List the user documentation components (such as user manuals, on-line help, 
-and tutorials) that will be delivered along with the software. Identify any 
-known user documentation delivery formats or standards.$>$
+Additionally to this SRS document there are also following sources about supercomputer system:
+\begin{itemize}
+\item  Code documentation
+\item  Document of test plan of software
+\end{itemize}
 
 
 \section{Assumptions and Dependencies}
