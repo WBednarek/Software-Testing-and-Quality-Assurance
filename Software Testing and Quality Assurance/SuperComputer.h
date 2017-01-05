@@ -7,6 +7,7 @@
 class SuperComputer
 {
 
+
     static const int numberOfNodes = 128;
     std::vector<Node> computerNodes;
     double jobCostPerMinute;

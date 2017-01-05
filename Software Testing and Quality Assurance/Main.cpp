@@ -15,9 +15,9 @@ int main() {
     cout << "Number of cores in node: " << node1.getAvailableNumberOfCoresInNode() << std::endl;
 
 
-    Simulation sim(50);
+    Simulation sim(26);
     sim.startSimulation();
-
-    //system("pause");
+    //Comment if not nessesary
+    system("pause");
     return 0;
 }
