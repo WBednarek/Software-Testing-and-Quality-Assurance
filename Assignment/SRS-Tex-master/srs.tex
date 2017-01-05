@@ -567,41 +567,97 @@ History:              & Created December 28, 2016                               
 \subsection{Description and Priority}
 Super computer (in spite of it's huge power) as every computer has limitations.
 To manage all demands First come, first served  (FCFS) service policy had been used in this supercomputer system. Also there are three types of job size declared by user: Small, Medium, Large, Huge and user can also declare how many cores he needs. This feature assign resources according to job estimated duration. For example for huge jobs computer can grant 4 nodes with 16 cores to use.
-\textbf{Feature Priority: } 9
+\\
+\\
+\textbf{Feature Priority: } 7
 
 \subsection{Functional Requirements}
 
-
+\begin{table}[h!]
+\centering
+\caption{Providing computation resources Functional Requirementsn}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Providing computation resources}}                                                                                                       \\ \hline
+Requirement \#: 8     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: \\ Student - 1; \\ Researcher - 1,4; \\ IT Support - 1,4;\end{tabular}      \\ \hline
+Description:          & Providing resources for each demand,\\ checking if there are available cores and nodes.  \\ \hline
+Rationale:            & Gives proper number of nodes for selected job \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                  \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Properly assign resources to each job \\ each job .\end{tabular} \\ \hline
+Priority:             & 7                                                                                                                      \\ \hline
+Conflicts             & -                                                                                                                         \\ \hline
+Supporting Materials: & -                                                                                                                         \\ \hline
+History:              & Created December 28, 2016                                                                                                 \\ \hline
+\end{tabular}
+\end{table}
 
 
 \section{System Feature - Browsing statistics  }
 
 \subsection{Description and Priority}
-
-\textbf{Feature Priority: } 9
+IT Support is allowed for browsing system statistics as: income per (day/month/year), avarage job time in scope of day/month/year, power consumption, average job cost.
+\\
+\\
+\textbf{Feature Priority: } 3
 
 \subsection{Functional Requirements}
 
+\begin{table}[h!]
+\centering
+\caption{Browsing statistics  Functional Requirements}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Browsing statistics }}                                                                                                       \\ \hline
+Requirement \#: 9     & \begin{tabular}[c]{@{}l@{}}Event/use case \#:  \\ IT Support - 5;\end{tabular}      \\ \hline
+
+Description:          & \begin{tabular}[c]{@{}l@{}}Notifying each user about their balance. \\ All statistics are showed in a chosen \\period of time (day,week,month,year)\end{tabular}                                                                                                             
+\\ \hline
+Rationale:            & Gives statics to IT Support member \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                  \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Relevant business statistics \\ for output\end{tabular} \\ \hline
+Priority:             & 3                                                                                                                      \\ \hline
+Conflicts             & -                                                                                                                         \\ \hline
+Supporting Materials: & -                                                                                                                         \\ \hline
+History:              & Created December 28, 2016                                                                                                 \\ \hline
+\end{tabular}
+\end{table}
 
 
 
-\section{System Feature - Managing users balance   }
+
+
+
+\section{System Feature - Managing users balance  }
 
 \subsection{Description and Priority}
 
-\textbf{Feature Priority: } 9
+\textbf{Feature Priority: } 2
 
 \subsection{Functional Requirements}
+\begin{table}[h!]
+\centering
+\caption{Managing users balance  Functional Requirements}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Providing computation resources}}                                                                                                       \\ \hline
+Requirement \#: 8     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: \\ Student - 2; \\ Researcher - 2; \\ IT Support - 2;\end{tabular}      \\ \hline
 
+Description:          & \begin{tabular}[c]{@{}l@{}}Notifying each user about their balance. \\ Checking if user balance is high enough \\ for performing selected job (job) to queue\end{tabular}                                                                                                             
 
+\\ \hline
+Rationale:            & Returning user balance \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                         \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Giving information about \\ actual user credits balance .\end{tabular} \\ \hline
+Priority:             & 2 \\ \hline
+Conflicts             & -                                                                                                                \\ \hline
+Supporting Materials: & -                                                                                                                \\ \hline
+History:              & Created December 28, 2016                                                                                        \\ \hline
+\end{tabular}
+\end{table}
 
-\section{System Feature - Scheduling }
-
-\subsection{Description and Priority}
-
-\textbf{Feature Priority: } 9
-
-\subsection{Functional Requirements}
 
 
 
