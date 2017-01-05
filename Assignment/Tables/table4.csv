@@ -1,0 +1,11 @@
+Customer interface requirements ;;;;
+Requirement #: 2;Event/use case #: Customer - 1,4;;;
+Description: ;;System should allow customer to look at his job in queue and actual balance ;;
+Rationale:;;To provide interface feature for delivering information about customer ‘s account;;
+Originator:;;Xxxx Xxxxx - Supercomputer programmer.;;
+Fit Criterion:;;User is able to see his current balance and position of his job in queue;;
+Priority:;;;9;
+Conflicts;;;-;
+Supporting Materials: - ;;;;
+History: Created December 20, 2016;;;;
+;;;;

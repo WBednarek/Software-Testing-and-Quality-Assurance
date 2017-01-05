@@ -1,0 +1,14 @@
+Event Name;Input & output;Description
+Starting simulation;Computing all current jobs;"Main functionality of supercomputer software; simulation starts creating random users and simulate real life computations adding each user demand (job) to queue"
+Setting currnet demand ;currentDemandNumber, ;"Main functionality of user; system’s customer will be able to order a job (computation)"
+;computation resutls ;
+Making users;Users list;Creating users for simulation purposes
+Estimating job period;userDemandType, ;Returning estimated time of demanded job selected by user
+;Estiamted job time;
+Listing jobs;Job list;Users are able to view all jobs in queue
+Providng computation resources ;Job estimated period, numer of demanded cores,  ;Providing resources for each demand, checking if there are available cores and nodes. 
+;Number of provided nodes  ;
+;;
+Browsing statistics;Income, longest job, average jobs time;All statistics are showed in a chosen period of time (day/week/month/year)
+Managing users balance ;Acctual balance;Notifying each user about their balance Checking if user balance is high enough for performing selected job
+Scheduling;Maded Queue;Making queue using First-come, first-served system

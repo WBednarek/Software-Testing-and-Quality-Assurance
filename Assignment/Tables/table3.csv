@@ -1,0 +1,11 @@
+Customer interface requirements ;;;;;;
+Requirement #: 1;;;;;Event/use case #: Customer - 1,4;
+Description: ;;;;;System should allow customer to order a job - computation.;
+Rationale:;;;;;To provide interface for computing on supercomputer. Interface is can be seen in terminal.;
+Originator:;;;;;Xxxx Xxxxx - Supercomputer programmer.;
+Fit Criterion:;;;;;User can send files to internal supercomputer’s storage and order needed high performance computation for given problem.  Interface should be intuitive.;
+Priority:;;;;;;9
+Conflicts;;;;;;-
+Supporting Materials: - ;;;;;;
+History: Created December 20, 2016;;;;;;
+;;;;;;
