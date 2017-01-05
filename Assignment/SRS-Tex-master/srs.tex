@@ -284,21 +284,71 @@ Third-party tools used for developing process:
 \chapter{External Interface Requirements}
 
 \section{User Interfaces}
-$<$Describe the logical characteristics of each interface between the software 
-product and the users. This may include sample screen images, any GUI standards 
-or product family style guides that are to be followed, screen layout 
-constraints, standard buttons and functions (e.g., help) that will appear on 
-every screen, keyboard shortcuts, error message display standards, and so on.  
-Define the software components for which a user interface is needed. Details of 
-the user interface design should be documented in a separate user interface 
-specification.$>$
+
+
+
+\begin{table}[h!]
+\centering
+\caption{User interface requirement - job ordering}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Customer interface requirements}}                                                                                                                                                                   \\ \hline
+Requirement \#: 1       & Event/use case \#: Customer - 1,4                                                                                                                                                                      \\ \hline
+Description:            & \begin{tabular}[c]{@{}l@{}}System should allow customer to \\ order a job - computation.\end{tabular}                                                                                                  \\ \hline
+Rationale:              & \begin{tabular}[c]{@{}l@{}}To provide interface for ordering computation on supercomputer. \\ Interface is can be seen in terminal.\end{tabular}                                                                  \\ \hline
+Originator:             & Xxxx Xxxxx - Supercomputer programmer.                                                                                                                                                                 \\ \hline
+Fit Criterion:          & \begin{tabular}[c]{@{}l@{}}User can send files to internal supercomputer's \\ storage and order needed high performance \\ computation for given problem.  Interface should be intuitive.\end{tabular} \\ \hline
+Priority:               & 9                                                                                                                                                                                                      \\ \hline
+Conflicts               & None                                                                                                                                                                                                   \\ \hline
+Supporting Materials: - & None                                                                                                                                                                                                   \\ \hline
+History:                & Created December 20, 2016                                                                                                                                                                              \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+\begin{table}[h!]
+\centering
+\caption{User interface requirement - viewing account}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Customer interface requirements}}                                                                                       \\ \hline
+Requirement \#: 2     & Event/use case \#: Customer - 1,4                                                                                            \\ \hline
+Description:          & \begin{tabular}[c]{@{}l@{}}System should allow customer to look \\ at his job in queue and actual balance\end{tabular}       \\ \hline
+Rationale:            & \begin{tabular}[c]{@{}l@{}}To provide interface feature for delivering \\ information about customer's account\end{tabular} \\ \hline
+Originator:           & Xxxx Xxxxx - Supercomputer programmer.                                                                                       \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}User is able to see his current balance \\ and position of his job in queue\end{tabular}          \\ \hline
+Priority:             & 9                                                                                                                            \\ \hline
+Conflicts             & -                                                                                                                            \\ \hline
+Supporting Materials: & -                                                                                                                            \\ \hline
+History:              & Created December 20, 2016                                                                                                    \\ \hline
+\end{tabular}
+\end{table}
 
 \section{Hardware Interfaces}
-$<$Describe the logical and physical characteristics of each interface between 
-the software product and the hardware components of the system. This may include 
-the supported device types, the nature of the data and control interactions 
-between the software and the hardware, and communication protocols to be 
-used.$>$
+
+
+\begin{table}[h!]
+\centering
+\caption{Hardware interface requirement}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Hardware interface requirement}}                                                                                                \\ \hline
+Requirement \#: 3     & Event/use case \#:  \\ \hline
+Description:          & \begin{tabular}[c]{@{}l@{}}Software should works well with given hardware.\\ Should be optimized for it. \\ Low latency communication standard \\InfiniBand is provided\end{tabular}              \\ \hline
+Rationale:            & \begin{tabular}[c]{@{}l@{}}To provide high quality supercomputer that usues its \\ hardware efficiently\end{tabular}                  \\ \hline
+Originator:           & Xxxx Xxxxx - Hardware specialist.                                                                                                          \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Hardware resources are utilized properly by software, \\ computation potential is no wasted\\ Communication in system is fast thanks to\\ InfiniBand system\end{tabular} \\ \hline
+Priority:             & 5                                                                                                                                    \\ \hline
+Conflicts             & -                                                                                                                                    \\ \hline
+Supporting Materials: & -                                                                                                                                    \\ \hline
+History:              & Created December 20, 2016                                                                                                            \\ \hline
+\end{tabular}
+\end{table}
 
 \section{Software Interfaces}
 $<$Describe the connections between this product and other specific software 
@@ -322,13 +372,29 @@ transfer rates, and synchronization mechanisms.$>$
 
 
 \chapter{System Features}
-$<$This template illustrates organizing the functional requirements for the 
-product by system features, the major services provided by the product. You may 
-prefer to organize this section by use case, mode of operation, user class, 
-object class, functional hierarchy, or combinations of these, whatever makes the 
-most logical sense for your product.$>$
 
-\section{System Feature 1}
+
+\begin{figure}[h!]
+\centering
+\includegraphics{modelStudent.png}
+\caption{User Student use case diagram}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics{modelResearcher.png}
+\caption{User Researcher use case diagram}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics{modelIT.png}
+\caption{IT Support use case diagram}
+\end{figure}
+
+\section{System Feature - Starting simulation}
 $<$Don’t really say “System Feature 1.” State the feature name in just a few 
 words.$>$
 
@@ -338,29 +404,55 @@ High, Medium, or Low priority. You could also include specific priority
 component ratings, such as benefit, penalty, cost, and risk (each rated on a 
 relative scale from a low of 1 to a high of 9).$>$
 
-\subsection{Stimulus/Response Sequences}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
+Crucial system feature. Starts whole simulation and shows all job in queue.
+
+\textbf{Priority:} 9
+
+
 
 \subsection{Functional Requirements}
-$<$Itemize the detailed functional requirements associated with this feature.  
-These are the software capabilities that must be present in order for the user 
-to carry out the services provided by the feature, or to execute the use case.  
-Include how the product should respond to anticipated error conditions or 
-invalid inputs. Requirements should be concise, complete, unambiguous, 
-verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary 
-information is not yet available.$>$
 
-$<$Each requirement should be uniquely identified with a sequence number or a 
-meaningful tag of some kind.$>$
 
-REQ-1:	REQ-2:
+\begin{table}[h!]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Simulation}}                                                                                                                                                                                                                                                             \\ \hline
+Requirement \#: 4     & \begin{tabular}[c]{@{}l@{}}Event/use case \#: Student - 1,2,3; \\ Researcher - 1,2,3,4; \\ IT Support - 1,2,3,4,5\end{tabular}                                                                                                                                                \\ \hline
+Description:          & \begin{tabular}[c]{@{}l@{}}Simulation starts creating random users and \\ simulate real life computations adding \\ each user demand (job) to queue\end{tabular}                                                                                                              \\ \hline
+Rationale:            & \begin{tabular}[c]{@{}l@{}}To provide simulation output for given\\ number of users\end{tabular}                                                                                                                                                                              \\ \hline
+Originator:           & Xxxx Xxxxx - Developers.                                                                                                                                                                                                                                                      \\ \hline
+Fit Criterion:        & \begin{tabular}[c]{@{}l@{}}Giving simulation output which uses supercomputer.\\ Output contains all scheduled jobs ordered by users\\ Displaying which user ordered which job, also\\ showing each user balance and estimated time of \\ completion for each job\end{tabular} \\ \hline
+Priority:             & 9                                                                                                                                                                                                                                                                             \\ \hline
+Conflicts             & -                                                                                                                                                                                                                                                                             \\ \hline
+Supporting Materials: & -                                                                                                                                                                                                                                                                             \\ \hline
+History:              & Created December 28, 2016                                                                                                                                                                                                                                                     \\ \hline
+\end{tabular}
+\end{table}
+
+
 
 \section{System Feature 2 (and so on)}
 
 
+$<$Don’t really say “System Feature 1.” State the feature name in just a few 
+words.$>$
+
+\subsection{Description and Priority}
+$<$Provide a short description of the feature and indicate whether it is of 
+High, Medium, or Low priority. You could also include specific priority 
+component ratings, such as benefit, penalty, cost, and risk (each rated on a 
+relative scale from a low of 1 to a high of 9).$>$
+
+\subsection{Functional Requirements}
+
+
+
 \chapter{Other Nonfunctional Requirements}
+
+
 
 \section{Performance Requirements}
 $<$If there are performance requirements for the product under various 
